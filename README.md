@@ -18,21 +18,21 @@ safari - npm run test-safari  <br/>
 4. Start selenium standalone service by passing this value : services: ['selenium-standalone'] in wdio.conf.js
 
 # Details about Framework:
-1. The feature file under test can be listed in below format in in wdio.conf.js:
+1. The feature file under test can be listed in below format in in wdio.conf.js: <br />
 specs: [
         './features/**/loginPage.feature',
         
     ]
     
- 2. The base url can be passed in in wdio.conf.js: 
+ 2. The base url can be passed in in wdio.conf.js: <br />
  baseUrl: 'https://teacher.snappet.org' - Depending on the environment, a parameter can be defined which can take input for test environment or acceptance environment, and that value can be appended to this base url.
  
- 3. The step-definitions can be listed in below format:
+ 3. The step-definitions can be listed in below format: <br />
  cucumberOpts: {
         require: ['./step-definition/loginPageSteps.js']
         }
         
- 4. Example of feature file:
+ 4. Example of feature file: <br />
  
   Feature: Testing login functionality
   Scenario Outline: To test successful login with valid credentials
