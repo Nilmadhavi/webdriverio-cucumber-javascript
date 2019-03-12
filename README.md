@@ -34,6 +34,8 @@ specs: [
         
  4. Example of feature file: <br />
  
+ NOTE : I have used data table to fetch data in this framework
+ 
   Feature: Testing login functionality
   Scenario Outline: To test successful login with valid credentials
 
@@ -47,6 +49,6 @@ specs: [
       | username             | password      | environmentUrl |
       |  "ChallengeTeacher1" | "*7jdfD%^st0" |    "/"         |
       
-    NOTE : I have used data table to fetch data in this framework
     
+  5. Tags like @smoke and @regression can be added to feature file to custom run certain test cases <br />
     
