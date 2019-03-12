@@ -2,7 +2,7 @@
 
 # Framework : webdriverio-cucumber
 
-# Test Cases: 3 scenarios: login, create subject, maintenance of subject has been automated - more priority has been given to building the framework then test coverage. <br/>
+# Test Cases: 3 scenarios: login, create subject, maintenance of subject has been automated - more priority has been given to building the framework than test coverage. <br/>
 
 # Requirements
 node - 10.8.0+ <br/>
