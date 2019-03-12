@@ -2,7 +2,7 @@
 
 # Framework : webdriverio-cucumber
 
-# Test Cases: 
+# Test Cases
 3 cases: login, create subject, maintenance of subject has been automated - more priority has been given to building the framework than test coverage. <br/>
 
 # Requirements
@@ -20,7 +20,7 @@ safari - npm run test-safari  <br/>
 3. Install selenium 
 4. Start selenium standalone service by passing this value : services: ['selenium-standalone'] in wdio.conf.js
 
-# Details about Framework:
+# Details about Framework
 1. The feature file under test can be listed in below format in in wdio.conf.js: <br />
 specs: [
         './features/**/loginPage.feature',
