@@ -1,4 +1,3 @@
-# Backbase Challenge
 
 # Framework : webdriverio-cucumber
 
