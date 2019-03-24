@@ -1,4 +1,4 @@
-# Snappet Challenge
+# Backbase Challenge
 
 # Framework : webdriverio-cucumber
 
@@ -28,7 +28,7 @@ specs: [
     ]
     
  2. The base url can be passed in in wdio.conf.js: <br />
- baseUrl: 'https://teacher.snappet.org' - Depending on the environment, a parameter can be defined which can take input for test environment or acceptance environment, and that value can be appended to this base url.
+ baseUrl: 'http://computer-database.herokuapp.com/computers' - Depending on the environment, a parameter can be defined which can take input for test environment or acceptance environment, and that value can be appended to this base url.
  
  3. The step-definitions can be listed in below format: <br />
  cucumberOpts: {
@@ -41,16 +41,6 @@ specs: [
  
   Feature: Testing login functionality
   Scenario Outline: To test successful login with valid credentials
-
-    Given I am on the Snappet website <environmentUrl>
-    Then The title of page should be "Snappet Teacher Dashboard"
-    When I enter username password <username> <password> and click on login button
-    Then I should go to home page
-    Then I logout
-
-    Examples:
-      | username             | password      | environmentUrl |
-      |  "ChallengeTeacher1" | "*7jdfD%^st0" |    "/"         |
       
     
   5. Tags like @smoke and @regression can be added to feature file to custom run certain test cases <br />

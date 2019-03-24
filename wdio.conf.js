@@ -11,7 +11,7 @@ exports.config = {
     //
 
     specs: [
-        './features/**/lessonPage.feature'
+        './features/**/loginPage.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -78,7 +78,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://teacher.snappet.org',
+    baseUrl: 'http://computer-database.herokuapp.com/computers',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 100000,
@@ -128,7 +128,7 @@ exports.config = {
     // reporters: ['dot'],//
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        require: ['./step-definition/homePageSteps.js'], // <string[]> (file/dir) require files before executing features
+        require: ['./step-definition/loginSteps.js'], // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
